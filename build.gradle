@@ -35,8 +35,3 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
-
-def publishing = hasProperty "PUBLISHING"
-if (publishing) {
-    apply from: 'publish.gradle'
-}
